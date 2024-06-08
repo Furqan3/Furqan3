@@ -13,7 +13,7 @@
 <br /> 
 
 <!--Start Intro-->               
-<p align="left">I a passionate computer engineering student with a keen interest in software development, machine learning and embedded systems.
+<p align="left">I a passionate computer engineering student with a keen interest in Software Development, Machine Learning and Block Chain.
 
 ## About Me </p>
 
