@@ -39,7 +39,7 @@
 </p>
 <br />
 
-
+<a href="https://app.daily.dev/fahmad3"><img src="https://api.daily.dev/devcards/v2/i6UndBOjqb2AN1jSjcWcT.png?r=d90&type=wide" width="652" alt="Furqan Ahmad's Dev Card"/></a>
 
 
 
