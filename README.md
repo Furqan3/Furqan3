@@ -1,83 +1,110 @@
-# 👨‍💻 Furqan Ahmad
-### Machine Learning Engineer & Computer Vision Specialist
+![Furqan3 Banner Image](https://github.com/Furqan3/Furqan3/assets/88136810/43776a6b-a65f-4206-854e-0ffc1b4dfa1e)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/furqan-ktk)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmad.ktk@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)](your-portfolio-link)
 
-## About Me
-Machine Learning Engineer specializing in computer vision and deep learning solutions. Experienced in developing end-to-end ML pipelines with a focus on production deployment. Passionate about solving complex problems using AI and contributing to open-source projects.
+<h1 align="center">
+  <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Furqan Ahmad
+</h1>
 
-### Current Work
-- 🔭 Working as ML Engineer at Vision Tech 360
-- 🌱 Developing ML solutions with TensorFlow and PyTorch
-- 👯 Open to collaborate on AI/ML projects
-- 💬 Ask me about Machine Learning, Computer Vision, and MLOps
+<h3 align="center">Computer Engineer | Aspiring Machine Learning Engineer</h3>
 
-## Technical Stack
+<br/>
 
-### Languages & Frameworks
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+<p>
+  I am a passionate computer engineering student with a keen interest in software development, machine learning, and blockchain. I am a lifelong learner and am always looking for new opportunities to grow my skills and knowledge.
+</p>
 
-### ML/AI & Data Science
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=flat-square&logo=OpenCV&logoColor=white)
+<ul>
+  <li>✨ Student of life :)</li>
+  <li>🌱 I’m currently learning many things, I believe that everyday is a learning opportunity.</li>
+  <li>💁‍♂️ Volunteer MOD at **Dev Community**.</li>
+  <li>❤ Contributing to Open Source.</li>
+  <li>💻 Visit my [Portfolio](https://github.com/Furqan3) for more details about me.</li>
+</ul>
 
-### Web Development
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+<h2 align="center">Skills and Technologies</h2>
+<p align="center">
+  <img width="500px" src="https://skillicons.dev/icons?i=cpp,py,go,matlab,flutter,mysql,latex,git,linux,vscode,pycharm,tensorflow,opencv,sklearn,arduino,github,androidstudio,gitlab,obsidian,visualstudio,html,css,js,react,docker,blender,unity,photoshop,figma,illustrator&perline=10" />
+</p>
 
-### Tools & Platforms
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+<a href="https://app.daily.dev/fahmad3"><img src="https://api.daily.dev/devcards/v2/i6UndBOjqb2AN1jSjcWcT.png?r=d90&type=wide" width="652" alt="Furqan Ahmad's Dev Card"/></a>
 
-## Featured Projects
 
-### 🤖 [AI-Powered Tourism Assistant](https://github.com/YourRepo/tourism-assistant)
-- Intelligent chatbot using Ollama and Llama 3.1
-- Implemented RAG for context-aware responses
-- Tech Stack: Next.js, MongoDB Atlas, Ollama
+<h2 align="center">GitHub Stats</h2>
 
-### 🔬 [Histopathological Images Analysis](https://github.com/Furqan3/Histopathological-Images-Analysis)
-- Medical image segmentation with 92% accuracy
-- Custom CNN architecture with transfer learning
-- Tech Stack: TensorFlow, OpenCV, Python
+<table width="100%">
+  <tr>
+    <td width="50%">
+      <h3 align="center"><strong>GitHub Stats</strong></h3>
+      <p align="center">
+        <a href="https://github.com/Furqan3">
+          <img align="center" src="https://github-readme-stats.vercel.app/api?username=Furqan3&count_private=true&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+        </a>
+      </p>
+    </td>
+    <td width="50%">
+      <h3 align="center"><strong>Streak Stats</strong></h3>
+      <p align="center">
+        <a href="https://github.com/Furqan3">
+          <img align="center" src="https://streak-stats.demolab.com?user=Furqan3&theme=tokyonight" alt="Streak Stats" />
+        </a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center"><strong>Latest Project</strong></h3>
+      <p align="center">
+        <a href="https://github.com/Furqan3/Histopathological-Images-Analysis">
+          <img align="center" width="470" src="https://github-readme-stats.vercel.app/api/pin/?username=Furqan3&repo=Histopathological-Images-Analysis&theme=tokyonight&show_owner=true" alt="Histopathological Images Analysis" />
+        </a>
+      </p>
+    </td>
+    <td width="50%">
+      <h3 align="center"><strong>Top Contributions</strong></h3>
+      <p align="center">
+        <a href="https://github.com/Furqan3/">
+          <img align="center" src="https://github-contributor-stats.vercel.app/api?username=Furqan3&limit=3&theme=tokyonight&show_owner=true&combine_all_yearly_contributions=true" alt="Top Repo" />
+        </a>
+      </p>
+    </td>
+  </tr>
+</table>
+<br />
 
-### 👁️ [Braille Language Decoder](https://github.com/YourRepo/braille-decoder)
-- 95% accurate Braille character recognition
-- Connected Component Analysis (CCA) implementation
-- Tech Stack: Python, OpenCV, NumPy
-
-## GitHub Statistics
-
+<h2 align="center">📈 Contribution Graph 📈</h2>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Furqan3&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Furqan3&theme=tokyonight" alt="Streak Stats" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Furqan3&bg_color=000&color=79d3c3&line=c792ea&point=ffeb95&area=true&hide_border=false" border-radius="15">
 </div>
-
-## Recent Activity
-<!--START_SECTION:activity-->
-<!-- Your recent GitHub activity will appear here -->
-<!--END_SECTION:activity-->
-
-## 🎓 Education
-- **B.S. in Computer Engineering**
-  - National University of Science and Technology, Islamabad
-  - Class of 2024
-  - Focus: Machine Learning, Computer Vision, Digital Signal Processing
-
-## 📫 Get in Touch
-- LinkedIn: [furqan-ktk](https://linkedin.com/in/furqan-ktk)
-- Email: fahmad.ktk@gmail.com
-- Portfolio: [View Portfolio](your-portfolio-link)
 
 ---
 
-⭐️ From [Furqan3](https://github.com/Furqan3)
+<h2 align="center">🌟 Thought of the Day 🌟</h2>
+
+<p align="center">
+  <img src="https://readme-daily-quotes.vercel.app/api?author=Yanni&quote=Music%20is%20like%20creating%20an%20emotional%20painting.%20The%20sounds%20are%20the%20colors.&theme=dark&bg_color=000&author_color=ffeb95">
+</p>
+<h2 align="center">🤝 Connect With Me 🤝 </h2>
+<div align="center">
+  <a href="https://www.linkedin.com/in/furqan-ktk/" target="_blank">
+    <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=Furqan linkedin style="margin-bottom: 5px;" />
+  </a>
+  
+  <a href="mailto:fahmad.ktk@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt=Furqan mail style="margin-bottom: 5px;" />
+  </a>
+
+  <a href="https://www.instagram.com/fahmad.ktk" target="_blank">
+    <img src=https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white alt=Furqan Instagram style="margin-bottom: 5px;" />
+  </a>
+
+</div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=65&section=footer"/>
+</p>
+
+------
+
+Credit: [Furqan3](https://github.com/Furqan3)
+
+Last Edited on: 29/11/2023
