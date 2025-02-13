@@ -8,7 +8,10 @@ I'm a Computer Engineer specializing in software development and machine learnin
 - **Languages:** C++, Python, Go
 - **Frontend:** HTML, CSS, JavaScript, React, Flutter
 - **Backend:** MySQL
-- **ML/AI:** TensorFlow, scikit-learn
+- **ML/AI:** TensorFlow, PyTorch, scikit-learn
+- **NLP/LLM:** LangChain, RAG, Transformers, BERT, GPT
+- **Computer Vision:** OpenCV, YOLO, CNN architectures
+- **MLOps:** MLflow, DVC, Weights & Biases
 - **DevOps:** Git, Docker
 - **Other Tools:** Linux, VS Code
 
