@@ -747,8 +747,8 @@ const Contact = () => {
           </div>
           
           <p className="contact-intro">
-            Ready to bring your innovative projects to life? I'm always excited to collaborate and connect with fellow professionals.
-            Whether you have a specific project in mind, are looking for a developer, or simply want to network, please don't hesitate to reach out!
+            Ready to bring your innovative projects to life? &apos;m always excited to collaborate and connect with fellow professionals.
+            Whether you have a specific project in mind, are looking for a developer, or simply want to network, please don&apos;t hesitate to reach out!
           </p>
           
           <div className="contact-content-con">
