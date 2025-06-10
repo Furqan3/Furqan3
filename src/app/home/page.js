@@ -656,7 +656,7 @@ const HomePage = () => {
               </div>
               <div className="btn-con">
                 <a
-                  href="/Resume.pdf"
+                  href="/Furqan_Resume.pdf"
                   className="main-btn"
                   target="_blank"
                   rel="noopener noreferrer"
