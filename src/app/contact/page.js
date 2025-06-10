@@ -31,19 +31,11 @@ const Contact = () => {
   const [modalMessage, setModalMessage] = useState('');
 
   useEffect(() => {
-    // Prevent scrolling on body
-    document.body.style.overflow = 'hidden';
-    
     if (isDarkMode) {
       document.body.classList.remove('light-mode');
     } else {
       document.body.classList.add('light-mode');
     }
-
-    // Cleanup function to restore scrolling if component unmounts
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
   }, [isDarkMode]);
 
   const toggleTheme = () => setIsDarkMode(!isDarkMode);
@@ -125,8 +117,8 @@ const Contact = () => {
           font-size: 1.1rem;
           color: var(--color-white);
           transition: all 0.4s ease-in-out;
-          height: 100vh;
-          overflow: hidden;
+          min-height: 100vh;
+          overflow-x: hidden;
         }
 
         a {
@@ -137,23 +129,22 @@ const Contact = () => {
         }
 
         .portfolio-wrapper {
-          height: 100vh;
+          min-height: 100vh;
           position: relative;
           width: 100%;
-          overflow: hidden;
         }
 
         .container {
-          height: 100vh;
+          min-height: 100vh;
           width: 100%;
           position: absolute;
           left: 0;
           top: 0;
-          display: flex;
-          flex-direction: column;
+          display: block;
+          transform: translateY(0) scaleY(1);
+          transition: all 0.4s ease-in-out;
           background-color: var(--color-primary);
           padding: 2rem;
-          overflow: hidden;
         }
 
         .controls {
@@ -217,26 +208,16 @@ const Contact = () => {
           transform: translateY(-3px);
         }
 
-        .main-content {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          max-height: 100vh;
-          overflow: hidden;
-        }
-
         .main-title {
           text-align: center;
-          margin-bottom: 1rem;
-          flex-shrink: 0;
+          margin-top: 3rem;
+          margin-bottom: 2rem;
         }
 
         .main-title h2 {
           position: relative;
           text-transform: uppercase;
-          font-size: clamp(2rem, 4vw, 3rem);
+          font-size: clamp(2.5rem, 5vw, 4rem);
           font-weight: 700;
           color: var(--color-white);
         }
@@ -254,30 +235,28 @@ const Contact = () => {
           z-index: -1;
           transform: translate(-50%, -50%);
           font-weight: 800;
-          font-size: clamp(2.5rem, 6vw, 4.5rem);
+          font-size: clamp(3rem, 8vw, 6.3rem);
           white-space: nowrap;
           opacity: 0.1;
         }
 
         .contact-intro {
-          max-width: 700px;
+          max-width: 800px;
           text-align: center;
-          font-size: clamp(0.8rem, 1vw, 1rem);
+          font-size: clamp(0.9rem, 1.2vw, 1.1rem);
           color: var(--color-grey-2);
-          margin: 0 auto 1.5rem auto;
-          line-height: 1.6;
-          flex-shrink: 0;
+          margin: 0 auto 3rem auto;
+          line-height: 1.7;
         }
 
         .contact-content-con {
           display: flex;
           justify-content: center;
           align-items: center;
-          flex: 1;
-          max-width: 700px;
-          width: 100%;
+          padding-top: 1rem;
+          max-width: 800px;
           margin: 0 auto;
-          overflow: hidden;
+          min-height: calc(100vh - 200px);
         }
 
         .left-contact {
@@ -292,8 +271,6 @@ const Contact = () => {
           box-shadow: var(--box-shadow-1);
           transition: all 0.3s ease-in-out;
           border: 1px solid rgba(255, 255, 255, 0.1);
-          max-height: 100%;
-          overflow-y: auto;
         }
 
         .left-contact:hover {
@@ -301,13 +278,9 @@ const Contact = () => {
           box-shadow: 0 10px 30px rgba(0,0,0,.4);
         }
 
-        .contact-card {
-          width: 100%;
-        }
-
         .left-contact h4 {
           margin-top: 0;
-          font-size: clamp(1.3rem, 2vw, 1.8rem);
+          font-size: clamp(1.5rem, 2.5vw, 2rem);
           text-transform: uppercase;
           color: var(--color-secondary);
           margin-bottom: 1rem;
@@ -316,20 +289,20 @@ const Contact = () => {
 
         .left-contact p {
           margin: 1rem 0;
-          line-height: 1.6;
+          line-height: 1.7;
           color: var(--color-grey-2);
-          font-size: clamp(0.8rem, 1vw, 0.95rem);
+          font-size: clamp(0.9rem, 1.1vw, 1rem);
         }
 
         .contact-info {
-          margin: 1.5rem 0;
+          margin: 2rem 0;
         }
 
         .contact-info .contact-item {
           display: flex;
           align-items: center;
-          margin: 0.8rem 0;
-          padding: 0.8rem;
+          margin: 1rem 0;
+          padding: 1rem;
           border-radius: 10px;
           background-color: rgba(255, 255, 255, 0.05);
           transition: all 0.3s ease;
@@ -347,9 +320,9 @@ const Contact = () => {
         .contact-item .icon {
           display: flex;
           align-items: center;
-          padding: 0.8rem;
-          gap: 0.8rem;
-          min-width: 100px;
+          padding: 1rem;
+          gap: 1rem;
+          min-width: 120px;
           color: var(--color-secondary);
           transition: color 0.3s ease;
         }
@@ -362,7 +335,7 @@ const Contact = () => {
           font-weight: 600;
           color: var(--color-white);
           transition: color 0.3s ease;
-          font-size: clamp(0.7rem, 0.9vw, 0.9rem);
+          font-size: clamp(0.8rem, 1vw, 1rem);
         }
 
         .contact-item:hover .icon span {
@@ -371,17 +344,17 @@ const Contact = () => {
 
         .contact-item p {
           margin: 0;
-          font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+          font-size: clamp(0.9rem, 1vw, 1rem);
           font-weight: 500;
         }
 
         .contact-social {
-          margin-top: 1.5rem;
+          margin-top: 2rem;
           text-align: center;
         }
 
         .contact-social h5 {
-          font-size: clamp(1rem, 1.2vw, 1.2rem);
+          font-size: clamp(1.1rem, 1.5vw, 1.3rem);
           margin-bottom: 1rem;
           color: var(--color-secondary);
           font-weight: 600;
@@ -401,8 +374,8 @@ const Contact = () => {
           background-color: var(--color-grey-4);
           cursor: pointer;
           justify-content: center;
-          width: 45px;
-          height: 45px;
+          width: 50px;
+          height: 50px;
           border-radius: 50%;
           transition: all 0.4s ease-in-out;
           box-shadow: var(--box-shadow-1);
@@ -521,6 +494,27 @@ const Contact = () => {
           box-shadow: 0 5px 20px rgba(39, 174, 96, 0.4);
         }
 
+        @media screen and (min-width: 1600px) {
+          .container {
+            padding: 3rem 5rem;
+          }
+          .contact-content-con {
+            max-width: 900px;
+          }
+        }
+
+        @media screen and (max-width: 1432px) {
+          .container {
+            padding: 2rem 3rem;
+          }
+        }
+
+        @media screen and (max-width: 1250px) {
+          .container {
+            padding: 2rem;
+          }
+        }
+
         @media screen and (max-width: 768px) {
           .container {
             padding: 1rem;
@@ -559,7 +553,6 @@ const Contact = () => {
             align-items: flex-start;
             gap: 0.5rem;
             padding: 1rem;
-            margin: 0.6rem 0;
           }
 
           .contact-item .icon {
@@ -573,17 +566,13 @@ const Contact = () => {
           }
 
           .contact-icon .social-icon-link {
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
           }
 
           .modal-content {
             width: 95%;
             padding: 2rem;
-          }
-
-          .contact-content-con {
-            max-width: 500px;
           }
         }
 
@@ -635,15 +624,15 @@ const Contact = () => {
           }
 
           .left-contact {
-            padding: 1.2rem;
+            padding: 1.5rem;
           }
 
           .contact-intro {
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
           }
 
           .contact-content-con {
-            max-width: 400px;
+            max-width: 500px;
           }
 
           .modal-content {
@@ -681,7 +670,7 @@ const Contact = () => {
           }
 
           .contact-content-con {
-            max-width: 350px;
+            max-width: 400px;
           }
 
           .modal-content {
@@ -758,8 +747,8 @@ const Contact = () => {
           </div>
           
           <p className="contact-intro">
-            Ready to bring your innovative projects to life? I&apos;m always excited to collaborate and connect with fellow professionals.
-            Whether you have a specific project in mind, are looking for a developer, or simply want to network, please don&apos;t hesitate to reach out!
+            Ready to bring your innovative projects to life? I'm always excited to collaborate and connect with fellow professionals.
+            Whether you have a specific project in mind, are looking for a developer, or simply want to network, please don't hesitate to reach out!
           </p>
           
           <div className="contact-content-con">
@@ -822,9 +811,7 @@ const Contact = () => {
         </section>
       </main>
 
-      <button className="chat-bot-btn" onClick={navigateToChat} title="Chat with Me">
-        <Bot size={24} />
-      </button>
+ 
 
       <div className={`modal-overlay ${showModal ? 'visible' : ''}`}>
         <div className="modal-content">
