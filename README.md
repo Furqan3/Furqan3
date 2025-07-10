@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Furqan Ahmad
 ### Computer Engineer | Software Developer | ML Enthusiast
 
