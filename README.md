@@ -1,7 +1,7 @@
 # Hi there, I'm Furqan Ahmad! 👋
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=27AE60&center=true&vCenter=true&width=435&lines=Computer+Engineer;Machine+Learning+Engineer;Blockchain+Developer;Full+Stack+Developer;Problem+Solver" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=27AE60&center=true&vCenter=true&width=435&lines=Computer+Engineer;Machine+Learning+Engineer;Full+Stack+Developer;Problem+Solver" alt="Typing SVG" />
 </div>
 
 ## 🚀 About Me
