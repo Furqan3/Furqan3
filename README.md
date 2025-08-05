@@ -52,17 +52,14 @@ Welcome to my GitHub profile! I'm a **Computer Engineer** passionate about creat
 
 ### Blockchain & Hardware
 ![Hyperledger](https://img.shields.io/badge/Hyperledger-2F3134?style=for-the-badge&logo=hyperledger&logoColor=white)
-![FPGA](https://img.shields.io/badge/FPGA-FF6600?style=for-the-badge&logo=xilinx&logoColor=white)
 ![Embedded](https://img.shields.io/badge/Embedded-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![NodeMCU](https://img.shields.io/badge/NodeMCU-E7352C?style=for-the-badge&logo=nodemcu&logoColor=white)
 
 ### Tools & Development Environment
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
 ![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=white)
-![DVC](https://img.shields.io/badge/DVC-13ADC7?style=for-the-badge&logo=dvc&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 ### Specialized Technologies
