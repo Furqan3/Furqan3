@@ -4,16 +4,14 @@ import { useEffect } from "react";
 const Chat = () => {
 	useEffect(() => {
 		const loadChat = () => {
-			if (window.Tawk_API) return;
-			var Tawk_API = Tawk_API || {},
-				Tawk_LoadStart = new Date();
-			var s1 = document.createElement("script"),
-				s0 = document.getElementsByTagName("script")[0];
-			s1.async = true;
-			s1.src = "https://embed.tawk.to/69de17b085fb211c366d7221/1jm5op304";
-			s1.charset = "UTF-8";
-			s1.setAttribute("crossorigin", "*");
-			s0.parentNode.insertBefore(s1, s0);
+			if (window.$crisp) return;
+			window.$crisp = [];
+			window.CRISP_WEBSITE_ID = "6b77ccd3-310f-48d2-8697-f6f8eaef3b33";
+			var d = document;
+			var s = d.createElement("script");
+			s.src = "https://client.crisp.chat/l.js";
+			s.async = true;
+			d.getElementsByTagName("head")[0].appendChild(s);
 		};
 
 		if (typeof requestIdleCallback !== "undefined") {
