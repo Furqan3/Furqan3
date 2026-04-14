@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Card from "./spotify/card";
 import { motion } from "framer-motion";
 import FallbackMe1 from "@/public/image/me1.jpg";
 import FallbackMe2 from "@/public/image/me2.jpg";
@@ -118,7 +117,6 @@ export default function About({ settings }) {
 							<p key={i}>{p}</p>
 						))}
 					</div>
-					<Card />
 				</motion.div>
 			</div>
 		</>
