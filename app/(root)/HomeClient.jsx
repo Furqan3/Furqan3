@@ -102,6 +102,7 @@ function SanityImage({ src, fallback, alt, fill, width, height, sizes, className
 }
 
 const HomeClient = ({ settings }) => {
+	const resume = settings?.resume || "/docs/cv.pdf";
 	const heroImage = settings?.heroImage || null;
 	const aboutHeroImage = settings?.aboutHeroImage || null;
 	const projectsImage = settings?.projectsImage || null;
@@ -180,7 +181,7 @@ const HomeClient = ({ settings }) => {
 							}}>
 							<Button variation="primary">
 								<Link
-									href={"/docs/cv.pdf"}
+									href={resume}
 									target="_blank"
 									rel="noopener noreferrer"
 									download>

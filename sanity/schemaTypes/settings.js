@@ -74,6 +74,14 @@ export const settingsSchema = {
 			of: [{ type: "string" }],
 		},
 		// ── Images ────────────────────────────────────────────────
+		// ── Resume ────────────────────────────────────────────────
+		{
+			name: "resume",
+			title: "Resume / CV (PDF)",
+			type: "file",
+			options: { accept: ".pdf" },
+		},
+		// ── Images ────────────────────────────────────────────────
 		{
 			name: "heroImage",
 			title: "Hero Photo (circular profile photo on home page)",

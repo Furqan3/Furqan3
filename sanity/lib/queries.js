@@ -106,6 +106,7 @@ export async function getSettings() {
 			eduLocation,
 			eduDescription,
 			eduTags,
+			"resume": resume.asset->url,
 			"heroImage": heroImage.asset->url,
 			"aboutHeroImage": aboutHeroImage.asset->url,
 			"aboutImage1": aboutImage1.asset->url,
