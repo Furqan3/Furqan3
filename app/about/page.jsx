@@ -10,7 +10,7 @@ import Skills from "./components/skills/skills.jsx";
 import Experience from "./components/experience.jsx";
 import Education from "./components/education.jsx";
 import About from "./components/about/about.jsx";
-import Hero from "@/public/image/me2.jpg";
+import FallbackHero from "@/public/image/me2.jpg";
 
 import { getExperiences, getAchievements, getSettings } from "@/sanity/lib/queries";
 
@@ -31,14 +31,25 @@ export default async function Page() {
 				<div className="relative h-screen gap-4 p-10 flex justify-center items-center flex-col mb-10 overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0 md:absolute top-1/4 md:right-[10%] md:-translate-y-16">
 						<div className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 overflow-hidden">
-							<Image
-								src={Hero}
-								alt="Furqan Ahmad"
-								fill
-								sizes="(max-width: 768px) 80vw, 30vw"
-								className="object-cover scale-150 origin-top"
-								placeholder="blur"
-							/>
+							{settings?.aboutHeroImage ? (
+								<Image
+									src={settings.aboutHeroImage}
+									alt="Furqan Ahmad"
+									fill
+									sizes="(max-width: 768px) 80vw, 30vw"
+									className="object-cover scale-150 origin-top"
+									unoptimized
+								/>
+							) : (
+								<Image
+									src={FallbackHero}
+									alt="Furqan Ahmad"
+									fill
+									sizes="(max-width: 768px) 80vw, 30vw"
+									className="object-cover scale-150 origin-top"
+									placeholder="blur"
+								/>
+							)}
 						</div>
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">

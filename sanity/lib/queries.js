@@ -105,7 +105,14 @@ export async function getSettings() {
 			eduEndYear,
 			eduLocation,
 			eduDescription,
-			eduTags
+			eduTags,
+			"heroImage": heroImage.asset->url,
+			"aboutHeroImage": aboutHeroImage.asset->url,
+			"aboutImage1": aboutImage1.asset->url,
+			"aboutImage2": aboutImage2.asset->url,
+			"aboutImage3": aboutImage3.asset->url,
+			"projectsImage": projectsImage.asset->url,
+			"setupImage": setupImage.asset->url
 		}`
 	);
 }

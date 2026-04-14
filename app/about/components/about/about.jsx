@@ -2,10 +2,35 @@
 import Image from "next/image";
 import Card from "./spotify/card";
 import { motion } from "framer-motion";
-import Me1 from "@/public/image/me1.jpg";
-import Me2 from "@/public/image/me2.jpg";
-import Me3 from "@/public/image/me3.jpg";
+import FallbackMe1 from "@/public/image/me1.jpg";
+import FallbackMe2 from "@/public/image/me2.jpg";
+import FallbackMe3 from "@/public/image/me3.jpg";
 import Hr from "@/components/Hr";
+
+function AboutImage({ src, fallback, alt, sizes }) {
+	if (src) {
+		return (
+			<Image
+				src={src}
+				alt={alt}
+				fill
+				sizes={sizes}
+				className="object-cover"
+				unoptimized
+			/>
+		);
+	}
+	return (
+		<Image
+			src={fallback}
+			alt={alt}
+			fill
+			sizes={sizes}
+			className="object-cover"
+			placeholder="blur"
+		/>
+	);
+}
 
 function Title() {
 	return (
@@ -21,6 +46,9 @@ function Title() {
 export default function About({ settings }) {
 	const name = settings?.name || "Furqan Ahmad";
 	const rawBio = settings?.bio || "";
+	const img1 = settings?.aboutImage1 || null;
+	const img2 = settings?.aboutImage2 || null;
+	const img3 = settings?.aboutImage3 || null;
 
 	// Split bio into paragraphs on blank lines
 	const paragraphs = rawBio
@@ -41,13 +69,11 @@ export default function About({ settings }) {
 								initial={{ opacity: 0, scale: 0.5, x: 100 }}
 								whileInView={{ opacity: 1, scale: 1, x: 0 }}
 								className="relative w-full h-full">
-								<Image
-									src={Me1}
+								<AboutImage
+									src={img1}
+									fallback={FallbackMe1}
 									alt="Furqan Ahmad"
-									fill
 									sizes="(max-width: 768px) 80vw, 40vw"
-									className="object-cover"
-									placeholder="blur"
 								/>
 							</motion.div>
 						</div>
@@ -57,13 +83,11 @@ export default function About({ settings }) {
 								whileInView={{ opacity: 1, scale: 1, x: 0 }}
 								transition={{ delay: 0.3 }}
 								className="relative w-full h-full">
-								<Image
-									src={Me2}
+								<AboutImage
+									src={img2}
+									fallback={FallbackMe2}
 									alt="Furqan Ahmad"
-									fill
 									sizes="(max-width: 768px) 60vw, 25vw"
-									className="object-cover"
-									placeholder="blur"
 								/>
 							</motion.div>
 						</div>
@@ -73,13 +97,11 @@ export default function About({ settings }) {
 								whileInView={{ opacity: 1, scale: 1, x: 0 }}
 								transition={{ delay: 0.5 }}
 								className="relative w-full h-full">
-								<Image
-									src={Me3}
+								<AboutImage
+									src={img3}
+									fallback={FallbackMe3}
 									alt="Furqan Ahmad"
-									fill
 									sizes="(max-width: 768px) 80vw, 35vw"
-									className="object-cover"
-									placeholder="blur"
 								/>
 							</motion.div>
 						</div>

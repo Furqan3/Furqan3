@@ -73,6 +73,49 @@ export const settingsSchema = {
 			type: "array",
 			of: [{ type: "string" }],
 		},
+		// ── Images ────────────────────────────────────────────────
+		{
+			name: "heroImage",
+			title: "Hero Photo (circular profile photo on home page)",
+			type: "image",
+			options: { hotspot: true },
+		},
+		{
+			name: "aboutHeroImage",
+			title: "About Hero Image (full-height photo on About page & home About section)",
+			type: "image",
+			options: { hotspot: true },
+		},
+		{
+			name: "aboutImage1",
+			title: "About Collage – Image 1 (large, left)",
+			type: "image",
+			options: { hotspot: true },
+		},
+		{
+			name: "aboutImage2",
+			title: "About Collage – Image 2 (small, top-right)",
+			type: "image",
+			options: { hotspot: true },
+		},
+		{
+			name: "aboutImage3",
+			title: "About Collage – Image 3 (medium, bottom-right)",
+			type: "image",
+			options: { hotspot: true },
+		},
+		{
+			name: "projectsImage",
+			title: "Projects Section Image (home page)",
+			type: "image",
+			options: { hotspot: true },
+		},
+		{
+			name: "setupImage",
+			title: "Setup / Contact Section Image (home page)",
+			type: "image",
+			options: { hotspot: true },
+		},
 	],
 	preview: {
 		select: { title: "name", subtitle: "title" },
