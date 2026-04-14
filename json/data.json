@@ -1,0 +1,150 @@
+{
+  "Projects": [
+    {
+      "show": true,
+      "title": "RAG Chatbot System",
+      "desc": [
+        "Built a production-grade retrieval-augmented generation chatbot system achieving 20% improvement in response accuracy over baseline LLM responses. Integrated vector databases with optimised embedding pipelines for efficient contextual retrieval.",
+        "The system is served via a high-performance FastAPI backend with a Next.js frontend for a seamless user experience. Supports document ingestion, chunking, and semantic search across large knowledge bases using LangChain orchestration."
+      ],
+      "year": "2024",
+      "preview": "",
+      "code": "",
+      "thumbnail": "/image/projects/ai/rag-chatbot/rag-thumbnail.png",
+      "images": [
+        "/image/projects/ai/rag-chatbot/rag1.png"
+      ],
+      "tech": [
+        "Python",
+        "LangChain",
+        "FastAPI",
+        "Next.js",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "slug": "rag-chatbot",
+      "category": [2]
+    },
+    {
+      "show": true,
+      "title": "Automated Voice Agent",
+      "desc": [
+        "Developed an end-to-end automated voice agent capable of handling conversations with real-time speech recognition and synthesis. Integrated ASR (OpenAI Whisper) and TTS pipelines with real-time NLP processing for natural dialogue management.",
+        "Built a responsive Next.js frontend and a high-performance FastAPI backend API layer. The agent supports multi-turn conversations and can be deployed for customer service automation and information retrieval workflows."
+      ],
+      "year": "2024",
+      "preview": "",
+      "code": "",
+      "thumbnail": "/image/projects/ai/voice-agent/voice-thumbnail.png",
+      "images": [
+        "/image/projects/ai/voice-agent/voice1.png"
+      ],
+      "tech": [
+        "Python",
+        "FastAPI",
+        "Next.js",
+        "OpenAI Whisper",
+        "NLP Transformers",
+        "WebSocket"
+      ],
+      "slug": "voice-agent",
+      "category": [2]
+    },
+    {
+      "show": true,
+      "title": "Facial Recognition Surveillance System",
+      "desc": [
+        "Engineered a real-time facial recognition surveillance system achieving 95% accuracy across 50+ concurrent camera feeds. The system handles face detection, alignment, and recognition at scale with robust performance under varying lighting and angles.",
+        "Deployed a scalable REST API handling 500+ requests/second at 150ms average latency. Built using YOLO for detection and custom CNN-based recognition models, containerised with Docker and deployed on AWS."
+      ],
+      "year": "2024",
+      "preview": "",
+      "code": "",
+      "thumbnail": "/image/projects/ai/facial-recognition/face-thumbnail.png",
+      "images": [
+        "/image/projects/ai/facial-recognition/face1.png"
+      ],
+      "tech": [
+        "Python",
+        "OpenCV",
+        "YOLO",
+        "FastAPI",
+        "Docker",
+        "AWS"
+      ],
+      "slug": "facial-recognition",
+      "category": [2]
+    },
+    {
+      "show": true,
+      "title": "CBDC with FPGA",
+      "desc": [
+        "Developed a secure Central Bank Digital Currency (CBDC) system using Hyperledger Fabric blockchain with FPGA computational offloading for high-throughput cryptographic operations.",
+        "The system leverages Hyperledger Fabric's permissioned blockchain for transaction privacy and auditability, while FPGA acceleration reduces cryptographic processing latency. Implemented smart contracts in Go for issuance, transfer, and redemption of digital currency."
+      ],
+      "year": "2024",
+      "preview": "",
+      "code": "https://github.com/Furqan3/fabric",
+      "thumbnail": "/image/projects/other/cbdc/cbdc-thumbnail.png",
+      "images": [
+        "/image/projects/other/cbdc/cbdc1.png"
+      ],
+      "tech": [
+        "Hyperledger Fabric",
+        "Docker",
+        "Golang",
+        "Node.js",
+        "FPGA"
+      ],
+      "slug": "cbdc-fpga",
+      "category": [9]
+    },
+    {
+      "show": true,
+      "title": "Histopathological Image Analysis",
+      "desc": [
+        "Built a U-Net deep learning model for medical image segmentation of histopathological slides. The model performs pixel-wise classification to identify and segment cancerous tissue regions with high accuracy.",
+        "Implemented with TensorFlow and Keras using the U-Net architecture with skip connections for precise boundary detection. Trained on annotated histopathology datasets and evaluated with standard medical imaging metrics including Dice coefficient and IoU."
+      ],
+      "year": "2023",
+      "preview": "",
+      "code": "https://github.com/Furqan3/Histopathological-Images-Analysis",
+      "thumbnail": "/image/projects/ai/histopathology/histo-thumbnail.png",
+      "images": [
+        "/image/projects/ai/histopathology/histo1.png"
+      ],
+      "tech": [
+        "Python",
+        "TensorFlow",
+        "OpenCV",
+        "Keras",
+        "U-Net"
+      ],
+      "slug": "histopathological-analysis",
+      "category": [2]
+    },
+    {
+      "show": true,
+      "title": "Skin Lesion Classification",
+      "desc": [
+        "Developed a melanoma detection model achieving 83% accuracy using classical machine learning techniques combined with image processing and feature extraction pipelines.",
+        "The pipeline includes dermoscopic image preprocessing, segmentation, and feature extraction using OpenCV, followed by classification with Scikit-learn. Explored multiple classifiers including SVM, Random Forest, and KNN to identify the optimal approach for lesion classification."
+      ],
+      "year": "2023",
+      "preview": "",
+      "code": "https://github.com/Furqan3/Skin-Lesion-Classification",
+      "thumbnail": "/image/projects/ai/skin-lesion/skin-thumbnail.png",
+      "images": [
+        "/image/projects/ai/skin-lesion/skin1.png"
+      ],
+      "tech": [
+        "Python",
+        "OpenCV",
+        "NumPy",
+        "Scikit-learn"
+      ],
+      "slug": "skin-lesion-classification",
+      "category": [2]
+    }
+  ]
+}
