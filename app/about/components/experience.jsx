@@ -132,7 +132,7 @@ export default function Experience({ experiences }) {
 			<div className="mx-auto container px-6 py-10">
 				<div className="flex justify-center items-center flex-col">
 					<div className="relative w-full max-w-6xl mx-auto">
-						<div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-black via-gray-400 to-transparent h-full"></div>
+						<div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-black via-gray-400 to-transparent h-full "></div>
 						<div className="md:hidden absolute left-0 w-1 bg-gradient-to-b from-black via-gray-400 to-transparent h-full"></div>
 						<div className="space-y-12 md:space-y-16 relative">
 							<AnimatePresence>
@@ -153,7 +153,7 @@ export default function Experience({ experiences }) {
 								transition={{ delay: 0.5 }}>
 								<button
 									onClick={() => setShowAll(!showAll)}
-									className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2">
+									className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2 ">
 									{showAll ? (
 										<>Show Less <svg className="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></>
 									) : (
@@ -161,9 +161,6 @@ export default function Experience({ experiences }) {
 									)}
 								</button>
 							</motion.div>
-						)}
-						{!showAll && (
-							<div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-300 to-transparent pointer-events-none"></div>
 						)}
 					</div>
 				</div>

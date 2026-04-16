@@ -150,10 +150,6 @@ export default function Education({ achievements, settings }) {
 									</AnimatePresence>
 								</div>
 
-								{!isExpanded && hasMore && (
-									<div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-slate-300 via-slate-300/70 to-transparent pointer-events-none"></div>
-								)}
-
 								{hasMore && (
 									<motion.div
 										className="flex justify-center mt-6"
