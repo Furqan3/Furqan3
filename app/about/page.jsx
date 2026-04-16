@@ -67,7 +67,7 @@ export default async function Page() {
 				</div>
 
 				<About settings={settings} />
-				<Skills />
+				<Skills settings={settings} />
 				<Experience experiences={experiences} />
 				<Education achievements={achievements} settings={settings} />
 				<Quote />

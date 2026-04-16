@@ -74,6 +74,46 @@ export const settingsSchema = {
 			of: [{ type: "string" }],
 		},
 		// ── Images ────────────────────────────────────────────────
+		// ── Skills ────────────────────────────────────────────────
+		{
+			name: "skillCategories",
+			title: "Skill Categories",
+			type: "array",
+			of: [
+				{
+					type: "object",
+					name: "skillCategory",
+					fields: [
+						{ name: "key", title: "Category Key (web / api / ai / cloud)", type: "string" },
+						{ name: "title", title: "Title", type: "string" },
+						{ name: "description", title: "Description", type: "string" },
+						{
+							name: "languages",
+							title: "Languages & Frameworks",
+							type: "array",
+							of: [
+								{
+									type: "object",
+									name: "skillItem",
+									fields: [
+										{ name: "name", title: "Name", type: "string" },
+										{ name: "highlight", title: "Highlight (primary skill)", type: "boolean" },
+									],
+									preview: { select: { title: "name" } },
+								},
+							],
+						},
+						{
+							name: "tools",
+							title: "Tools & Infrastructure",
+							type: "array",
+							of: [{ type: "string" }],
+						},
+					],
+					preview: { select: { title: "title" } },
+				},
+			],
+		},
 		// ── Resume ────────────────────────────────────────────────
 		{
 			name: "resume",

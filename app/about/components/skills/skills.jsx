@@ -227,8 +227,28 @@ function SkillDetails({ selectedSkill }) {
   );
 }
 
-export default function Skills() {
-	const [selectedCategory, setSelectedCategory] = useState("web");
+export default function Skills({ settings }) {
+	const [selectedCategory, setSelectedCategory] = useState(null);
+
+	// Build categories from CMS if available, otherwise fall back to hardcoded
+	const iconMap = { web: CodepenIcon, api: WebhookIcon, ai: ActivityIcon, cloud: MobileIcon };
+	const categories = settings?.skillCategories?.length
+		? Object.fromEntries(
+			settings.skillCategories.map((cat) => [
+				cat.key,
+				{
+					title: cat.title,
+					icon: iconMap[cat.key] || CodepenIcon,
+					description: cat.description,
+					languages: cat.languages || [],
+					tools: cat.tools || [],
+				},
+			])
+		)
+		: skillCategories;
+
+	const activeKey = selectedCategory || Object.keys(categories)[0];
+
 	return (
 		<div className="relative">
 			<div className="mx-auto container px-6 py-20">
@@ -248,7 +268,7 @@ export default function Skills() {
 
 				{/* Skill Categories Grid */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-					{Object.entries(skillCategories).map(([key, skill], index) => (
+					{Object.entries(categories).map(([key, skill], index) => (
 						<motion.div
 							key={key}
 							initial={{ opacity: 0, y: 20 }}
@@ -256,7 +276,7 @@ export default function Skills() {
 							transition={{ delay: index * 0.1 }}>
 							<SkillCard
 								skill={skill}
-								isSelected={selectedCategory === key}
+								isSelected={activeKey === key}
 								onClick={() => setSelectedCategory(key)}
 							/>
 						</motion.div>
@@ -265,7 +285,7 @@ export default function Skills() {
 
 				{/* Skill Details */}
 				<AnimatePresence mode="wait">
-					<SkillDetails selectedSkill={skillCategories[selectedCategory]} />
+					<SkillDetails selectedSkill={categories[activeKey]} />
 				</AnimatePresence>
 			</div>
 		</div>

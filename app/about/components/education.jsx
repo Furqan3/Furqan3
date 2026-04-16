@@ -101,9 +101,6 @@ export default function Education({ achievements, settings }) {
 											{tag}
 										</div>
 									))}
-									<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-										{eduLocation}
-									</div>
 								</div>
 							</div>
 						</motion.div>
