@@ -1,43 +1,26 @@
 "use client";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faMedal,
-	faTrophy,
-	faAward,
-	faRocket,
-	faBolt,
-} from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
-const iconMap = {
-	trophy: faTrophy,
-	medal: faMedal,
-	award: faAward,
-	rocket: faRocket,
-	bolt: faBolt,
-};
-
 const colorMap = {
-	gold: "text-yellow-500",
-	blue: "text-blue-500",
-	green: "text-green-500",
-	bronze: "text-amber-600",
-	pink: "text-pink-500",
-	silver: "text-slate-400",
-	cyan: "text-cyan-500",
-	lime: "text-lime-500",
+	gold: "from-yellow-400 to-orange-500",
+	blue: "from-blue-500 to-purple-600",
+	green: "from-green-400 to-teal-500",
+	bronze: "from-amber-600 to-yellow-600",
+	pink: "from-pink-500 to-rose-600",
+	silver: "from-slate-400 to-slate-500",
+	cyan: "from-cyan-400 to-blue-500",
+	lime: "from-lime-400 to-green-500",
 };
 
 const FALLBACK_ACHIEVEMENTS = [
-	{ _id: "1", title: "1st Place — Gold Medal", subtitle: "Fesmaro IT Business Competition", date: "2025", iconKey: "trophy", colorKey: "gold" },
-	{ _id: "2", title: "Finalist", subtitle: "Hackfest Build to Billion 2025", date: "Mar 2025", iconKey: "bolt", colorKey: "blue" },
-	{ _id: "3", title: "3rd Place — Bronze Medal", subtitle: "Faculty of Engineering Most Outstanding Student", date: "Apr 2025", iconKey: "award", colorKey: "bronze" },
-	{ _id: "4", title: "Special Award | Gold Medal | Incubation Opportunity", subtitle: "Indonesia Inventor Day 2024 (IID)", date: "Aug 2024", iconKey: "rocket", colorKey: "pink" },
-	{ _id: "5", title: "1st Place — Gold Medal", subtitle: "Tech & Trade Expo 2024", date: "Jul 2024", iconKey: "trophy", colorKey: "gold" },
-	{ _id: "6", title: "2nd Place — Silver Medal", subtitle: "IdeaFest 2024", date: "Jul 2024", iconKey: "medal", colorKey: "silver" },
+	{ _id: "1", title: "1st Place — Gold Medal", subtitle: "Fesmaro IT Business Competition", date: "2025", colorKey: "gold" },
+	{ _id: "2", title: "Finalist", subtitle: "Hackfest Build to Billion 2025", date: "Mar 2025", colorKey: "blue" },
+	{ _id: "3", title: "3rd Place — Bronze Medal", subtitle: "Faculty of Engineering Most Outstanding Student", date: "Apr 2025", colorKey: "bronze" },
+	{ _id: "4", title: "Special Award | Gold Medal | Incubation Opportunity", subtitle: "Indonesia Inventor Day 2024 (IID)", date: "Aug 2024", colorKey: "pink" },
+	{ _id: "5", title: "1st Place — Gold Medal", subtitle: "Tech & Trade Expo 2024", date: "Jul 2024", colorKey: "gold" },
+	{ _id: "6", title: "2nd Place — Silver Medal", subtitle: "IdeaFest 2024", date: "Jul 2024", colorKey: "silver" },
 ];
 
-// Extract 4-digit year from date string e.g. "Mar 2025" → "2025", "2024" → "2024"
 function extractYear(date) {
 	const match = date?.match(/\d{4}/);
 	return match ? match[0] : "Other";
@@ -46,7 +29,7 @@ function extractYear(date) {
 export default function Education({ achievements, settings }) {
 	const data = achievements?.length ? achievements : FALLBACK_ACHIEVEMENTS;
 
-	// Group achievements by year, sorted descending
+	// Group by year, sorted descending
 	const grouped = data.reduce((acc, a) => {
 		const year = extractYear(a.date);
 		if (!acc[year]) acc[year] = [];
@@ -59,7 +42,6 @@ export default function Education({ achievements, settings }) {
 	const degree = settings?.degree || "BE Computer Engineering";
 	const startYear = settings?.eduStartYear || "2020";
 	const endYear = settings?.eduEndYear || "2024";
-	const eduLocation = settings?.eduLocation || "Islamabad, Pakistan";
 	const eduDescription = settings?.eduDescription || "Graduated with a degree in Computer Engineering from NUST, one of Pakistan's top-ranked universities. Built a strong foundation in computer systems, algorithms, and software engineering alongside practical experience in Full-Stack Development, Machine Learning, and Embedded Systems.";
 	const eduTags = settings?.eduTags || ["Computer Engineering", "Islamabad, Pakistan"];
 
@@ -109,7 +91,7 @@ export default function Education({ achievements, settings }) {
 							</div>
 						</motion.div>
 
-						{/* Achievements — Right, grouped by year */}
+						{/* Achievements — Right, grouped by year with cards */}
 						<motion.div
 							className="flex flex-col justify-start px-5 md:px-0"
 							initial={{ opacity: 0, x: 50 }}
@@ -133,29 +115,27 @@ export default function Education({ achievements, settings }) {
 											<div className="flex-1 h-px bg-gray-300" />
 										</div>
 
-										{/* Achievements list for this year */}
-										<div className="space-y-3 pl-2">
+										{/* Cards for this year */}
+										<div className="space-y-3">
 											{grouped[year].map((a, i) => {
-												const icon = iconMap[a.iconKey] || faMedal;
-												const color = colorMap[a.colorKey] || "text-yellow-500";
+												const color = colorMap[a.colorKey] || "from-yellow-400 to-orange-500";
 												return (
 													<motion.div
 														key={a._id || i}
-														initial={{ opacity: 0, x: -10 }}
-														whileInView={{ opacity: 1, x: 0 }}
-														transition={{ duration: 0.4, delay: i * 0.08 }}
-														className="flex items-start gap-3 group">
-														<FontAwesomeIcon
-															icon={icon}
-															className={`${color} mt-1 w-4 h-4 shrink-0`}
-														/>
-														<div>
-															<p className="font-medium text-black leading-tight">{a.title}</p>
-															<p className="text-sm text-gray-500">{a.subtitle}</p>
-															{/* Show month if present */}
-															{a.date && a.date !== year && (
-																<p className="text-xs text-gray-400 mt-0.5">{a.date}</p>
-															)}
+														initial={{ opacity: 0, y: 20 }}
+														animate={{ opacity: 1, y: 0 }}
+														transition={{ duration: 0.5, delay: i * 0.05 }}>
+														<div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-4 shadow-lg hover:bg-white/30 transition-all duration-300 hover:shadow-xl grayscale hover:grayscale-0">
+															<div className="flex items-center gap-4">
+																<div className={`w-2 self-stretch rounded-full bg-gradient-to-b ${color} shrink-0`} />
+																<div>
+																	<h3 className="font-medium">{a.title}</h3>
+																	<p className="text-sm text-gray-600">{a.subtitle}</p>
+																	{a.date && a.date !== year && (
+																		<p className="text-xs text-gray-400 mt-1">{a.date}</p>
+																	)}
+																</div>
+															</div>
 														</div>
 													</motion.div>
 												);
