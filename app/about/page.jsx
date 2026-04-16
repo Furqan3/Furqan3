@@ -37,7 +37,7 @@ export default async function Page() {
 									alt="Furqan Ahmad"
 									fill
 									sizes="(max-width: 768px) 80vw, 30vw"
-									className="object-cover scale-150 origin-top"
+									className="object-contain"
 									unoptimized
 								/>
 							) : (
@@ -46,7 +46,7 @@ export default async function Page() {
 									alt="Furqan Ahmad"
 									fill
 									sizes="(max-width: 768px) 80vw, 30vw"
-									className="object-cover scale-150 origin-top"
+									className="object-contain"
 									placeholder="blur"
 								/>
 							)}
