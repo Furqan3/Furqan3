@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import Button from "@/components/Button";
 import Hr from "@/components/Hr";
@@ -146,9 +148,15 @@ export default function ProjectsClient({ projects, featuredProject }) {
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{ delay: 0.5, type: "spring" }}>
 							<h2 className="text-2xl font-bold tracking-wider mb-3">{highlight.title}</h2>
-							<p className="text-gray-600 text-justify title text-lg">
-								{highlight.desc?.[0] || ""}
-							</p>
+							<div className="text-gray-600 text-justify title text-lg prose prose-neutral max-w-none
+								prose-p:text-gray-600 prose-p:leading-relaxed prose-p:mb-3
+								prose-strong:text-neutral-800 prose-strong:font-semibold
+								prose-ul:list-disc prose-ul:pl-5 prose-li:text-gray-600
+								prose-code:bg-gray-100 prose-code:px-1 prose-code:rounded prose-code:text-sm">
+								<ReactMarkdown remarkPlugins={[remarkGfm]}>
+									{highlight.desc?.[0] || ""}
+								</ReactMarkdown>
+							</div>
 							<div className="mt-3 flex gap-2 flex-wrap">
 								<Button variation="primary">
 									<Link href={`projects/${highlight.slug}`}>More</Link>
