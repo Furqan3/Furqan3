@@ -4,7 +4,7 @@ import { client } from "./client";
 
 export async function getAllProjects() {
 	return client.fetch(
-		`*[_type == "project"] | order(_createdAt asc) {
+		`*[_type == "project"] | order(year desc, _createdAt desc) {
 			_id,
 			title,
 			"slug": slug.current,
@@ -24,7 +24,7 @@ export async function getAllProjects() {
 
 export async function getFeaturedProject() {
 	return client.fetch(
-		`*[_type == "project" && featured == true] | order(_createdAt asc) [0] {
+		`*[_type == "project" && featured == true] | order(year desc, _createdAt desc) [0] {
 			title,
 			"slug": slug.current,
 			year,
