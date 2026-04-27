@@ -99,11 +99,6 @@ MLOps:           [Docker, CI/CD, MLflow, monitoring, edge deployment]
 
 </div>
 
-#### Contribution Activity
-
-<div align="center">
-<a href="https://github.com/Furqan3"><img src="https://github-readme-activity-graph.vercel.app/graph?username=Furqan3&bg_color=00000000&color=27AE60&line=27AE60&point=ffffff&hide_border=true&area=true" width="98%" /></a>
-</div>
 
 ---
 
