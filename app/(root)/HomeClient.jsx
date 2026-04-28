@@ -265,7 +265,7 @@ const HomeClient = ({ settings }) => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							A brief introduction my journey as a software
+							A brief introduction my journey as a computer
 							engineer.
 						</motion.p>
 						<motion.div
