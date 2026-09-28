@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=190&section=header&text=Furqan%20Ahmad&fontSize=54&fontAlignY=36&desc=Full-Stack%20%26%20AI%20Engineer&descAlignY=58&descSize=18&fontColor=ffffff&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=190&section=header&text=Furqan%20Ahmad&fontSize=54&fontAlignY=36&desc=Full-Stack%20and%20AI%20Engineer&descAlignY=58&descSize=18&fontColor=ffffff&animation=fadeIn" width="100%" />
 
 <a href="https://furqan3.vercel.app/"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=2600&pause=900&color=27AE60&center=true&vCenter=true&width=720&lines=I+ship+production+web+apps+and+the+AI+inside+them.;Next.js+%E2%80%A2+FastAPI+%E2%80%A2+PyTorch+%E2%80%A2+vLLM;RAG+%E2%80%A2+Object+Detection+%E2%80%A2+Voice+Agents;ML+Engineer+%40+Vision+Tech+360" alt="Typing intro" /></a>
 
@@ -22,7 +22,7 @@ I'm a **Computer Engineer (NUST, Islamabad)** who builds complete products: the 
 
 - 🧠 **Machine Learning Engineer at [Vision Tech 360](https://furqan3.vercel.app/about):** RAG chatbots, real-time facial recognition across 50+ cameras, automated voice agents, and ML models served over FastAPI.
 - 🛠️ **Freelance full-stack engineer:** e-commerce, healthcare, fintech and ed-tech sites that are live in production (see [shipped client work](#-shipped-client-work)).
-- 🔬 **Research:** Ethereum L2 finality benchmarking for **Mitacs Globalink 2026**; hyperspectral object detection on Kaggle.
+- 🔬 **Research and competitions:** hyperspectral object detection on Kaggle, plus open-source ML tooling.
 - 🏆 Six competition awards, including **two gold medals** and an **Indonesia Inventor Day special award**.
 
 ```yaml
@@ -64,12 +64,12 @@ Detecting 18 classes in **16-band hyperspectral** night and street imagery on Ka
 `PyTorch` `D-FINE` `RT-DETR` `MMDetection`
 </td>
 <td width="50%" valign="top">
-<a href="https://furqan3.vercel.app/projects/l2-finality-benchmark"><img src="public/image/content/projects/l2-finality-benchmark/thumb.webp" alt="L2 finality benchmark" width="100%" /></a>
+<a href="https://www.athlix.fit/"><img src="public/image/content/projects/athlix/thumb.webp" alt="Athlix" width="100%" /></a>
 
-### [Ethereum L2 Finality Benchmark](https://github.com/Furqan3/L2_benchmarking)
-**Mitacs Globalink 2026** research. Measures when an L2 transaction is *really* final at three trust levels: sequencer receipt, batch posted to Ethereum, and proof or challenge window. **2,485 transactions** across 60 runs on zkSync and OP Stack, with an audit of every measurement.
+### [Athlix](https://www.athlix.fit/)
+**AI recovery and injury prevention for athletes.** A live SaaS product: athletes upload an injury photo or medical report and get personalised recovery and injury-prevention recommendations within seconds. A FastAPI service orchestrates GPT with tuned prompts, and Stripe handles subscriptions.
 
-`Python` `Ethereum` `zkSync` `Optimism`
+`Next.js` `FastAPI` `GPT API` `Stripe`
 </td>
 </tr>
 </table>
@@ -78,7 +78,6 @@ Detecting 18 classes in **16-band hyperspectral** night and street imagery on Ka
 
 | | Project | What I built | Stack |
 |:-:|---|---|---|
-| <img src="public/image/content/projects/athlix/thumb.webp" width="120" alt="Athlix" /> | **[Athlix](https://www.athlix.fit/)** | SaaS that generates AI recovery and injury-prevention plans for athletes, with Stripe billing | Next.js · FastAPI · GPT API · Stripe |
 | <img src="public/image/content/projects/accountant-app/thumb.webp" width="120" alt="FilingHub" /> | **[FilingHub](https://filinghub.co.uk/)** | Dual-portal app connecting UK businesses with accountants, with real-time messaging | Next.js · TypeScript · Socket.io · PostgreSQL |
 | <img src="public/image/content/projects/peptora-labs/thumb.webp" width="120" alt="Peptora Labs" /> | **[Peptora Labs](https://www.peptoralabs.com/)** | Headless e-commerce storefront with CMS-driven content and email flows | Next.js · Medusa.js · Storyblok · Klaviyo |
 | <img src="public/image/content/projects/x-finance-bull/thumb.webp" width="120" alt="X Finance Bull" /> | **[X Finance Bull](https://xfinancebull.com/)** | Web3 and DeFi learning academy with courses, expert profiles and a leaderboard | Next.js · Storyblok · Supabase |
