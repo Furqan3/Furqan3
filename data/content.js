@@ -27,6 +27,128 @@ export const settings = {
 // Ordered newest first. `category`: 1 = Web, 2 = AI/ML, 9 = Other (see ProjectsClient filters).
 export const projects = [
 	{
+		"title": "Hyperspectral Object Detection Challenge 2026",
+		"slug": "hyperspectral-object-detection",
+		"show": true,
+		"featured": false,
+		"year": "2026",
+		"category": [
+			2
+		],
+		"desc": [
+			"Competed in Track 1 of the 2nd Hyperspectral Remote Sensing Data Processing and Application Challenge on Kaggle: detecting 18 object classes (people, e-bikes, cars, fruit and their plastic look-alikes, sports balls) in 16-band snapshot hyperspectral images, often dark and noisy street scenes. Competition rules allowed only a single detector, with no ensembles or weighted box fusion.",
+			"Built an end-to-end pipeline that demosaics raw mosaic frames into 16-band cubes and adapts COCO-pretrained detectors to 16-channel input. Benchmarked YOLO26, RT-DETR, D-FINE, DINO and Co-DETR under the competition metric; a D-FINE-S model (10.2M parameters) trained with the DEIM recipe won with 0.710 mAP@[.5:.95] out-of-fold. Band-shared photometric augmentation improved detection of the dark street classes.",
+			"Found that local validation was anti-correlated with the public leaderboard because test images differ from training images, so final model selection used matched-seed leaderboard probes. Training ran on an RTX 3090 and 4× A100 servers; the best public leaderboard score was 0.658 mAP."
+		],
+		"tech": [
+			"PyTorch",
+			"D-FINE / DEIM",
+			"RT-DETR",
+			"YOLO",
+			"MMDetection",
+			"Hyperspectral Imaging",
+			"Kaggle"
+		],
+		"thumbnail": "/image/content/projects/hyperspectral-object-detection/thumb.webp",
+		"images": [
+			"/image/content/projects/hyperspectral-object-detection/1.webp",
+			"/image/content/projects/hyperspectral-object-detection/2.webp"
+		],
+		"preview": "https://www.kaggle.com/competitions/hyperspectral-object-detection-challenge-2026",
+		"code": null
+	},
+	{
+		"title": "dsdoctor — Dataset Trainability Audit",
+		"slug": "dsdoctor",
+		"show": true,
+		"featured": false,
+		"year": "2026",
+		"category": [
+			2
+		],
+		"desc": [
+			"An open-source tool that answers one question before you spend a GPU-day: **is this labelled object-detection dataset safe to train on, and what has to be fixed first?** It is built for engineers handed a dataset they did not create, such as a vendor delivery, a Roboflow export or a merge of internal collections.",
+			"It catches the defects that never show up by eyeballing images: train/val leakage that inflates mAP, zero-area boxes that put NaNs in the loss, pixel coordinates left unnormalised, sub-pixel boxes the dataloader silently drops, and classes too sparse to measure. It returns a verdict (train or blocked), a triage report and an ordered fix plan that it can apply.",
+			"Every finding comes from deterministic detectors, not a language model. A local LLM (Qwen) only orchestrates the audit and ranks what matters. `scan` runs offline in seconds, `audit` produces the report, fix plan and full trajectory, and the project ships with 218 offline tests under Apache-2.0."
+		],
+		"tech": [
+			"Python",
+			"Object Detection",
+			"LLM Agents",
+			"Qwen",
+			"vLLM",
+			"CLI"
+		],
+		"thumbnail": "/image/content/projects/dsdoctor/thumb.webp",
+		"images": [
+			"/image/content/projects/dsdoctor/1.webp"
+		],
+		"preview": null,
+		"code": "https://github.com/Furqan3/dsdoctor"
+	},
+	{
+		"title": "ilm — Multimodal Knowledge Engine",
+		"slug": "ilm",
+		"show": true,
+		"featured": false,
+		"year": "2026",
+		"category": [
+			2,
+			1
+		],
+		"desc": [
+			"Upload PDFs, Word documents, presentations, images, audio and video, then ask questions in plain language. ilm answers with citations that open the exact page, slide, image or second of video the claim came from. It runs fully locally.",
+			"Every source becomes a *segment* (a PDF paragraph, a rendered page, a video scene or a transcript window) with a locator, so retrieval and citation work the same way across all modalities. Three retrievers run in parallel: BM25 for exact identifiers, BGE-M3 dense embeddings for paraphrase, and SigLIP 2 cross-modal search for things nobody described in writing. Their results are fused by reciprocal rank and reranked.",
+			"Multi-part questions are decomposed by a planner, each part is retrieved separately and the evidence is merged, which fixed cases where a single embedding landed between two topics and retrieved neither. Without an LLM it answers extractively and cannot hallucinate; with any OpenAI-compatible endpoint (vLLM) it writes grounded, cited answers. FastAPI backend with a Next.js frontend."
+		],
+		"tech": [
+			"FastAPI",
+			"Next.js",
+			"RAG",
+			"BGE-M3",
+			"SigLIP 2",
+			"Whisper",
+			"vLLM"
+		],
+		"thumbnail": "/image/content/projects/ilm/thumb.webp",
+		"images": [
+			"/image/content/projects/ilm/1.webp",
+			"/image/content/projects/ilm/2.webp"
+		],
+		"preview": null,
+		"code": null
+	},
+	{
+		"title": "Ethereum L2 Finality Benchmark",
+		"slug": "l2-finality-benchmark",
+		"show": true,
+		"featured": false,
+		"year": "2026",
+		"category": [
+			9
+		],
+		"desc": [
+			"Research project for **Mitacs Globalink 2026** (scalability track, TCDT Lab, supervised by Prof. Sara Rouhani) measuring transaction finality on Ethereum Layer 2 rollups at three trust levels: when the sequencer accepts a transaction, when its batch is posted to Ethereum, and when it is proven or its challenge window closes.",
+			"The study is purely observational: two of the three timestamps come from Ethereum rather than the rollup, so it measures public networks without hosting any infrastructure. It collected 2,485 transactions across 60 benchmark runs on zkSync and OP Stack, with a 98.9% success rate.",
+			"Includes a data audit that cross-checks stored receipts and batch mappings against live RPC data, documents measurement caveats such as client delay and batch clustering, and generates handbooks and figures reproducibly from the raw data."
+		],
+		"tech": [
+			"Python",
+			"Ethereum",
+			"zkSync",
+			"Optimism",
+			"Web3",
+			"Data Analysis"
+		],
+		"thumbnail": "/image/content/projects/l2-finality-benchmark/thumb.webp",
+		"images": [
+			"/image/content/projects/l2-finality-benchmark/1.webp",
+			"/image/content/projects/l2-finality-benchmark/2.webp"
+		],
+		"preview": null,
+		"code": "https://github.com/Furqan3/L2_benchmarking"
+	},
+	{
 		"title": "Santander Customer Transaction Prediction",
 		"slug": "santander-customer-transaction-prediction",
 		"show": true,
