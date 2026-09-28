@@ -15,7 +15,6 @@ function AboutImage({ src, fallback, alt, sizes }) {
 				fill
 				sizes={sizes}
 				className="object-cover"
-				unoptimized
 			/>
 		);
 	}

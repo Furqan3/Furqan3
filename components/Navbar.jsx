@@ -104,7 +104,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 								</motion.h2>
 							</div>
 						</Link>
-						<Link href="/#contact">
+						<Link href="/resume">
 							<div
 								onClick={handleItemClick}
 								className="text-2xl font-bold text-white">
@@ -113,6 +113,19 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 									variants={itemVariants}
 									animate={isNavOpen ? "open" : "closed"}
 									custom={0.4}>
+									Resume
+								</motion.h2>
+							</div>
+						</Link>
+						<Link href="/#contact">
+							<div
+								onClick={handleItemClick}
+								className="text-2xl font-bold text-white">
+								<motion.h2
+									className="text-white"
+									variants={itemVariants}
+									animate={isNavOpen ? "open" : "closed"}
+									custom={0.5}>
 									Contact
 								</motion.h2>
 							</div>

@@ -1,7 +1,6 @@
-import { getAllProjects } from "@/sanity/lib/queries";
+import { getAllProjects } from "@/lib/content";
 import ArchiveClient from "./ArchiveClient";
 
-export default async function Page() {
-	const projects = await getAllProjects();
-	return <ArchiveClient projects={projects} />;
+export default function Page() {
+	return <ArchiveClient projects={getAllProjects()} />;
 }

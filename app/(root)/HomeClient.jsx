@@ -58,7 +58,7 @@ function ScrollIndicator() {
 	);
 }
 
-function SanityImage({ src, fallback, alt, fill, width, height, sizes, className }) {
+function ContentImage({ src, fallback, alt, fill, width, height, sizes, className }) {
 	if (src) {
 		return fill ? (
 			<Image
@@ -67,7 +67,6 @@ function SanityImage({ src, fallback, alt, fill, width, height, sizes, className
 				fill
 				sizes={sizes}
 				className={className}
-				unoptimized
 			/>
 		) : (
 			<Image
@@ -76,7 +75,6 @@ function SanityImage({ src, fallback, alt, fill, width, height, sizes, className
 				width={width}
 				height={height}
 				className={className}
-				unoptimized
 			/>
 		);
 	}
@@ -102,7 +100,6 @@ function SanityImage({ src, fallback, alt, fill, width, height, sizes, className
 }
 
 const HomeClient = ({ settings }) => {
-	const resume = settings?.resume || "/docs/cv.pdf";
 	const heroImage = settings?.heroImage || null;
 	const aboutHeroImage = settings?.aboutHeroImage || null;
 	const projectsImage = settings?.projectsImage || null;
@@ -126,7 +123,7 @@ const HomeClient = ({ settings }) => {
 						}}>
 						<div className="block md:hidden col-span-1 mx-auto my-10">
 							<div className="bg-slate-500 rounded-full h-60 w-60 grayscale hover:grayscale-0 transition-all ease duration-300">
-								<SanityImage
+								<ContentImage
 									src={heroImage}
 									fallback={FallbackHero}
 									width={500}
@@ -180,13 +177,7 @@ const HomeClient = ({ settings }) => {
 								type: "spring",
 							}}>
 							<Button variation="primary">
-								<Link
-									href={resume}
-									target="_blank"
-									rel="noopener noreferrer"
-									download>
-									Download CV
-								</Link>
+								<Link href="/resume">Resume</Link>
 							</Button>
 							<Button variation="secondary">
 								<a href="#contact">Contact Me</a>
@@ -202,7 +193,7 @@ const HomeClient = ({ settings }) => {
 							type: "spring",
 						}}>
 						<div className="rounded-full h-auto w-auto max-w-[26vw] lg:px-12 grayscale hover:grayscale-0 transition-all ease duration-300">
-							<SanityImage
+							<ContentImage
 								src={heroImage}
 								fallback={FallbackHero}
 								width={400}
@@ -235,7 +226,7 @@ const HomeClient = ({ settings }) => {
 								stiffness: 100,
 								damping: 20,
 							}}>
-							<SanityImage
+							<ContentImage
 								src={aboutHeroImage}
 								fallback={FallbackAbout}
 								fill
@@ -303,7 +294,7 @@ const HomeClient = ({ settings }) => {
 								stiffness: 100,
 								damping: 20,
 							}}>
-							<SanityImage
+							<ContentImage
 								src={projectsImage}
 								fallback={FallbackProjects}
 								fill
@@ -374,7 +365,7 @@ const HomeClient = ({ settings }) => {
 								stiffness: 100,
 								damping: 20,
 							}}>
-							<SanityImage
+							<ContentImage
 								src={setupImage}
 								fallback={FallbackSetup}
 								fill

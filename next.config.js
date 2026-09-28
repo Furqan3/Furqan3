@@ -9,14 +9,10 @@ module.exports = withBundleAnalyzer({
 				protocol: "https",
 				hostname: "i.scdn.co",
 			},
-			{
-				protocol: "https",
-				hostname: "cdn.sanity.io",
-			},
 		],
 		// Add image optimization settings
 		formats: ["image/avif", "image/webp"],
-		minimumCacheTTL: 60,
+		minimumCacheTTL: 31536000,
 	},
 	webpack: (config, options) => {
 		config.module.rules.push({

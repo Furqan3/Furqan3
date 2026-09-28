@@ -12,14 +12,12 @@ import Education from "./components/education.jsx";
 import About from "./components/about/about.jsx";
 import FallbackHero from "@/public/image/me2.jpg";
 
-import { getExperiences, getAchievements, getSettings } from "@/sanity/lib/queries";
+import { getExperiences, getAchievements, getSettings } from "@/lib/content";
 
-export default async function Page() {
-	const [experiences, achievements, settings] = await Promise.all([
-		getExperiences(),
-		getAchievements(),
-		getSettings(),
-	]);
+export default function Page() {
+	const experiences = getExperiences();
+	const achievements = getAchievements();
+	const settings = getSettings();
 
 	return (
 		<>
@@ -38,7 +36,7 @@ export default async function Page() {
 									fill
 									sizes="(max-width: 768px) 80vw, 30vw"
 									className="object-contain"
-									unoptimized
+									priority
 								/>
 							) : (
 								<Image

@@ -1,7 +1,6 @@
-import { getSettings } from "@/sanity/lib/queries";
+import { getSettings } from "@/lib/content";
 import HomeClient from "./HomeClient";
 
-export default async function Page() {
-	const settings = await getSettings();
-	return <HomeClient settings={settings} />;
+export default function Page() {
+	return <HomeClient settings={getSettings()} />;
 }

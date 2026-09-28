@@ -1,13 +1,8 @@
-import { getAllProjects, getFeaturedProject } from "@/sanity/lib/queries";
+import { getVisibleProjects, getFeaturedProject } from "@/lib/content";
 import ProjectsClient from "./components/ProjectsClient";
 
-export default async function Page() {
-	const [allProjects, featuredProject] = await Promise.all([
-		getAllProjects(),
-		getFeaturedProject(),
-	]);
-
-	const projects = allProjects.filter((p) => p.show !== false);
-
-	return <ProjectsClient projects={projects} featuredProject={featuredProject} />;
+export default function Page() {
+	return (
+		<ProjectsClient projects={getVisibleProjects()} featuredProject={getFeaturedProject()} />
+	);
 }
