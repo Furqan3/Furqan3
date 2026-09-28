@@ -12,11 +12,10 @@ import Education from "./components/education.jsx";
 import About from "./components/about/about.jsx";
 import FallbackHero from "@/public/image/me2.jpg";
 
-import { getExperiences, getAchievements, getSettings } from "@/lib/content";
+import { getExperiences, getSettings } from "@/lib/content";
 
 export default function Page() {
 	const experiences = getExperiences();
-	const achievements = getAchievements();
 	const settings = getSettings();
 
 	return (
@@ -67,7 +66,7 @@ export default function Page() {
 				<About settings={settings} />
 				<Skills settings={settings} />
 				<Experience experiences={experiences} />
-				<Education achievements={achievements} settings={settings} />
+				<Education settings={settings} />
 				<Quote />
 			</main>
 		</>

@@ -23,7 +23,6 @@ I'm a **Computer Engineer (NUST, Islamabad)** who builds complete products: the 
 - 🧠 **Machine Learning Engineer at [Vision Tech 360](https://furqan3.vercel.app/about):** RAG chatbots, real-time facial recognition across 50+ cameras, automated voice agents, and ML models served over FastAPI.
 - 🛠️ **Freelance full-stack engineer:** e-commerce, healthcare, fintech and ed-tech sites that are live in production (see [shipped client work](#-shipped-client-work)).
 - 🔬 **Research and competitions:** hyperspectral object detection on Kaggle, plus open-source ML tooling.
-- 🏆 Six competition awards, including **two gold medals** and an **Indonesia Inventor Day special award**.
 
 ```yaml
 llm_systems:      [RAG, hybrid retrieval, agentic workflows, local inference with vLLM]
@@ -110,15 +109,6 @@ All projects, with write-ups and screenshots, are on **[furqan3.vercel.app/proje
 | Software Engineer Intern | IMAGE INC · Remote | Jun 2023 – Sep 2023 |
 | IoT / Embedded Systems Intern | AIRLIFT Technologies · Islamabad | Feb 2022 – May 2022 |
 
-## 🏆 Achievements
-
-- 🥇 **1st Place, Gold Medal:** Fesmaro IT Business Competition (2025)
-- 🥇 **1st Place, Gold Medal:** Tech & Trade Expo (2024)
-- 🌟 **Special Award, Gold Medal and incubation offer:** Indonesia Inventor Day (2024)
-- 🥈 **2nd Place, Silver Medal:** IdeaFest (2024)
-- 🥉 **3rd Place, Bronze Medal:** Faculty of Engineering Most Outstanding Student (2025)
-- 🚀 **Finalist:** Hackfest Build to Billion (2025)
-
 ## 🧰 Tech stack
 
 <div align="center">
@@ -151,7 +141,7 @@ All projects, with write-ups and screenshots, are on **[furqan3.vercel.app/proje
 This repo powers **[furqan3.vercel.app](https://furqan3.vercel.app/)**, which is built with Next.js 15, Tailwind CSS 4 and Framer Motion.
 
 - **Fully static:** every page, all project pages and the resume PDF are prerendered at build time, with no CMS or runtime data fetching.
-- **Content lives in code:** projects, experience, achievements and bio are in [`data/content.js`](data/content.js). Images are in `public/image/content/`, and the resume is in [`app/resume/data.js`](app/resume/data.js).
+- **Content lives in code:** projects, experience and bio are in [`data/content.js`](data/content.js). Images are in `public/image/content/`, and the resume is in [`app/resume/data.js`](app/resume/data.js).
 - **Also includes** an AI chat widget, a Spotify "now playing" card on the About page, and a downloadable PDF resume at `/api/resume`.
 
 ```bash
